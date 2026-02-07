@@ -1,0 +1,2166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9778219afcc9b64c22eec7a742994661 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_9778219afcc9b64c22eec7a742994661" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_9778219afcc9b64c22eec7a742994661 = L.map(
+                "map_9778219afcc9b64c22eec7a742994661",
+                {
+                    center: [44.825, -0.59],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+  "title": "Les D\u00e9positaires du Palladium",
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9d02922dad307e065593f5fd5311c598 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_9d02922dad307e065593f5fd5311c598.addTo(map_9778219afcc9b64c22eec7a742994661);
+        
+    
+            var marker_ab73dd7ebea38a4b517fbd49cb6762f3 = L.marker(
+                [44.8315, -0.6033],
+                {
+}
+            ).addTo(map_9778219afcc9b64c22eec7a742994661);
+        
+    
+            var icon_9e5407441e401aac8c8f807145f49b8b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_31dda03c70123acd2be7d43127216ec6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f20f94de5219d0f1991ea976a2b5741f = $(`<div id="html_f20f94de5219d0f1991ea976a2b5741f" style="width: 100.0%; height: 100.0%;"><div style='min-width: 150px; font-family: sans-serif;'><b>Carrefour market</b><br>7 rue d’ornado<br><i>Alimentation général</i></div></div>`)[0];
+                popup_31dda03c70123acd2be7d43127216ec6.setContent(html_f20f94de5219d0f1991ea976a2b5741f);
+            
+        
+
+        marker_ab73dd7ebea38a4b517fbd49cb6762f3.bindPopup(popup_31dda03c70123acd2be7d43127216ec6)
+        ;
+
+        
+    
+    
+            marker_ab73dd7ebea38a4b517fbd49cb6762f3.bindTooltip(
+                `<div>
+                     <b>Carrefour market</b> : L’endroit où vous êtes accueilli avec le sourire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ab73dd7ebea38a4b517fbd49cb6762f3.setIcon(icon_9e5407441e401aac8c8f807145f49b8b);
+            
+    
+            var marker_44371a47f3f0d9dcaee3e7283b99e405 = L.marker(
+                [44.8306, -0.6051],
+                {
+}
+            ).addTo(map_9778219afcc9b64c22eec7a742994661);
+        
+    
+            var icon_96f8f684d29b3ef268442115d75608c8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_99932911c1e03c827dc0ea5fb2e63e16 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_414cfa280e64c8699c679d4c6b69c5a7 = $(`<div id="html_414cfa280e64c8699c679d4c6b69c5a7" style="width: 100.0%; height: 100.0%;"><div style='min-width: 150px; font-family: sans-serif;'><b>Begula</b><br>31 rue jenny lepreux<br><i>Cadeau & déco</i></div></div>`)[0];
+                popup_99932911c1e03c827dc0ea5fb2e63e16.setContent(html_414cfa280e64c8699c679d4c6b69c5a7);
+            
+        
+
+        marker_44371a47f3f0d9dcaee3e7283b99e405.bindPopup(popup_99932911c1e03c827dc0ea5fb2e63e16)
+        ;
+
+        
+    
+    
+            marker_44371a47f3f0d9dcaee3e7283b99e405.bindTooltip(
+                `<div>
+                     <b>Begula</b> : La boutique à surprise à visiter
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_44371a47f3f0d9dcaee3e7283b99e405.setIcon(icon_96f8f684d29b3ef268442115d75608c8);
+            
+    
+            var marker_79d2ba5cab2ad932bf7a7be9b873379d = L.marker(
+                [44.8308, -0.6046],
+                {
+}
+            ).addTo(map_9778219afcc9b64c22eec7a742994661);
+        
+    
+            var icon_beee257f8bafaafa7e552e23afe3825d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d2518d31ff464074cb0a21ba3b8c93a1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_05de014fb10459096a5c692b77e0e28c = $(`<div id="html_05de014fb10459096a5c692b77e0e28c" style="width: 100.0%; height: 100.0%;"><div style='min-width: 150px; font-family: sans-serif;'><b>Le saint aug</b><br>19 rue jenny lepreux<br><i>Tabac et libraire</i></div></div>`)[0];
+                popup_d2518d31ff464074cb0a21ba3b8c93a1.setContent(html_05de014fb10459096a5c692b77e0e28c);
+            
+        
+
+        marker_79d2ba5cab2ad932bf7a7be9b873379d.bindPopup(popup_d2518d31ff464074cb0a21ba3b8c93a1)
+        ;
+
+        
+    
+    
+            marker_79d2ba5cab2ad932bf7a7be9b873379d.bindTooltip(
+                `<div>
+                     <b>Le saint aug</b> : Repère de convivialité
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_79d2ba5cab2ad932bf7a7be9b873379d.setIcon(icon_beee257f8bafaafa7e552e23afe3825d);
+            
+    
+            var marker_f37f06c72c4858db330234261e1195d6 = L.marker(
+                [44.8312, -0.6042],
+                {
+}
+            ).addTo(map_9778219afcc9b64c22eec7a742994661);
+        
+    
+            var icon_8c089e8dc40150b2722596daaade7214 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7068d34d85e64fd2c327c4480b2b224e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f771b3eadd9c5719c39a72b8a5c053dd = $(`<div id="html_f771b3eadd9c5719c39a72b8a5c053dd" style="width: 100.0%; height: 100.0%;"><div style='min-width: 150px; font-family: sans-serif;'><b>Crédit agricole</b><br>15 place de l’église<br><i>Banque</i></div></div>`)[0];
+                popup_7068d34d85e64fd2c327c4480b2b224e.setContent(html_f771b3eadd9c5719c39a72b8a5c053dd);
+            
+        
+
+        marker_f37f06c72c4858db330234261e1195d6.bindPopup(popup_7068d34d85e64fd2c327c4480b2b224e)
+        ;
+
+        
+    
+    
+            marker_f37f06c72c4858db330234261e1195d6.bindTooltip(
+                `<div>
+                     <b>Crédit agricole</b> : Le coffre fort le plus sympa du quartier
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f37f06c72c4858db330234261e1195d6.setIcon(icon_8c089e8dc40150b2722596daaade7214);
+            
+    
+            var marker_6ad0a10a8a5d594bfad84bf1080ff469 = L.marker(
+                [44.8322, -0.603],
+                {
+}
+            ).addTo(map_9778219afcc9b64c22eec7a742994661);
+        
+    
+            var icon_e7453eecaaa59c2fa976120aa4ae3bae = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c068346f1580266b639e8b38cb021d71 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_327324778b55d29436b3c0b5996e499b = $(`<div id="html_327324778b55d29436b3c0b5996e499b" style="width: 100.0%; height: 100.0%;"><div style='min-width: 150px; font-family: sans-serif;'><b>GSA</b><br>Rue d’Ornano<br><i>Alimentation général</i></div></div>`)[0];
+                popup_c068346f1580266b639e8b38cb021d71.setContent(html_327324778b55d29436b3c0b5996e499b);
+            
+        
+
+        marker_6ad0a10a8a5d594bfad84bf1080ff469.bindPopup(popup_c068346f1580266b639e8b38cb021d71)
+        ;
+
+        
+    
+    
+            marker_6ad0a10a8a5d594bfad84bf1080ff469.bindTooltip(
+                `<div>
+                     <b>GSA</b> : Petit mais costaud
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6ad0a10a8a5d594bfad84bf1080ff469.setIcon(icon_e7453eecaaa59c2fa976120aa4ae3bae);
+            
+    
+            var marker_dc6f2f7b0e5f37f064af6d9eacdcc1b6 = L.marker(
+                [44.8318, -0.6015],
+                {
+}
+            ).addTo(map_9778219afcc9b64c22eec7a742994661);
+        
+    
+            var icon_58a699720f96d52df84d931b09f5e3ad = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f8d53fffc95dd2daf80b5ccb830a9196 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7bbb6054d36aa25efaedd69b8097de16 = $(`<div id="html_7bbb6054d36aa25efaedd69b8097de16" style="width: 100.0%; height: 100.0%;"><div style='min-width: 150px; font-family: sans-serif;'><b>L’atelier des artistes</b><br>4 rue d’Ornano<br><i>Coiffeur</i></div></div>`)[0];
+                popup_f8d53fffc95dd2daf80b5ccb830a9196.setContent(html_7bbb6054d36aa25efaedd69b8097de16);
+            
+        
+
+        marker_dc6f2f7b0e5f37f064af6d9eacdcc1b6.bindPopup(popup_f8d53fffc95dd2daf80b5ccb830a9196)
+        ;
+
+        
+    
+    
+            marker_dc6f2f7b0e5f37f064af6d9eacdcc1b6.bindTooltip(
+                `<div>
+                     <b>L’atelier des artistes</b> : Pour des cheveux de star
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_dc6f2f7b0e5f37f064af6d9eacdcc1b6.setIcon(icon_58a699720f96d52df84d931b09f5e3ad);
+            
+    
+            var marker_43e80f346e017137f2ea41ad476d9a6b = L.marker(
+                [44.831, -0.604],
+                {
+}
+            ).addTo(map_9778219afcc9b64c22eec7a742994661);
+        
+    
+            var icon_17a35a284043a6a27f3e97675c942eda = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b58644c3c83e658aa63a3703cf3e97aa = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b252938ed9dbee554689042d7a4133a5 = $(`<div id="html_b252938ed9dbee554689042d7a4133a5" style="width: 100.0%; height: 100.0%;"><div style='min-width: 150px; font-family: sans-serif;'><b>Générale des eaux</b><br>Place de l'église<br><i>Services</i></div></div>`)[0];
+                popup_b58644c3c83e658aa63a3703cf3e97aa.setContent(html_b252938ed9dbee554689042d7a4133a5);
+            
+        
+
+        marker_43e80f346e017137f2ea41ad476d9a6b.bindPopup(popup_b58644c3c83e658aa63a3703cf3e97aa)
+        ;
+
+        
+    
+    
+            marker_43e80f346e017137f2ea41ad476d9a6b.bindTooltip(
+                `<div>
+                     <b>Générale des eaux</b> : L'eau claire du quartier
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_43e80f346e017137f2ea41ad476d9a6b.setIcon(icon_17a35a284043a6a27f3e97675c942eda);
+            
+    
+            var marker_694d6147eae7499c09843de1bd33b88a = L.marker(
+                [44.8305, -0.6045],
+                {
+}
+            ).addTo(map_9778219afcc9b64c22eec7a742994661);
+        
+    
+            var icon_2864dc54a9a24f1ea67b5296ff8e75f3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_add21ef47159f1141f2ac16c4bbd31f6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_441b8c6cdcb035b74e8c6b97d25b18db = $(`<div id="html_441b8c6cdcb035b74e8c6b97d25b18db" style="width: 100.0%; height: 100.0%;"><div style='min-width: 150px; font-family: sans-serif;'><b>Boucherie Saint-Augustin</b><br>Rue Jenny Lepreux<br><i>Boucher traiteur</i></div></div>`)[0];
+                popup_add21ef47159f1141f2ac16c4bbd31f6.setContent(html_441b8c6cdcb035b74e8c6b97d25b18db);
+            
+        
+
+        marker_694d6147eae7499c09843de1bd33b88a.bindPopup(popup_add21ef47159f1141f2ac16c4bbd31f6)
+        ;
+
+        
+    
+    
+            marker_694d6147eae7499c09843de1bd33b88a.bindTooltip(
+                `<div>
+                     <b>Boucherie Saint-Augustin</b> : La viande des champions
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_694d6147eae7499c09843de1bd33b88a.setIcon(icon_2864dc54a9a24f1ea67b5296ff8e75f3);
+            
+    
+            var marker_e9087c1ae56167910e858ddddf619fa0 = L.marker(
+                [44.8313, -0.6048],
+                {
+}
+            ).addTo(map_9778219afcc9b64c22eec7a742994661);
+        
+    
+            var icon_e38d4cbfbc9cc149e375366358880b03 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_59580407ea0eeef7a3018745d1314129 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3db56af6701326adefb3718f85cf9486 = $(`<div id="html_3db56af6701326adefb3718f85cf9486" style="width: 100.0%; height: 100.0%;"><div style='min-width: 150px; font-family: sans-serif;'><b>Boulangerie de l'église</b><br>Place de l'église<br><i>Artisan boulanger</i></div></div>`)[0];
+                popup_59580407ea0eeef7a3018745d1314129.setContent(html_3db56af6701326adefb3718f85cf9486);
+            
+        
+
+        marker_e9087c1ae56167910e858ddddf619fa0.bindPopup(popup_59580407ea0eeef7a3018745d1314129)
+        ;
+
+        
+    
+    
+            marker_e9087c1ae56167910e858ddddf619fa0.bindTooltip(
+                `<div>
+                     <b>Boulangerie de l'église</b> : Le pain croustillant du matin
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e9087c1ae56167910e858ddddf619fa0.setIcon(icon_e38d4cbfbc9cc149e375366358880b03);
+            
+    
+            var marker_787dbd32eca70d8aae14cd6ee1e2c15d = L.marker(
+                [44.8311, -0.6038],
+                {
+}
+            ).addTo(map_9778219afcc9b64c22eec7a742994661);
+        
+    
+            var icon_03bf082c4d79fd79f0cafeae77bd7a86 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_27a41d11c8e4c683b27428746f08f7e9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_05413440d3d9e689a354ea3e764b2faf = $(`<div id="html_05413440d3d9e689a354ea3e764b2faf" style="width: 100.0%; height: 100.0%;"><div style='min-width: 150px; font-family: sans-serif;'><b>Pharmacie de l'église</b><br>Place de l'église<br><i>Santé</i></div></div>`)[0];
+                popup_27a41d11c8e4c683b27428746f08f7e9.setContent(html_05413440d3d9e689a354ea3e764b2faf);
+            
+        
+
+        marker_787dbd32eca70d8aae14cd6ee1e2c15d.bindPopup(popup_27a41d11c8e4c683b27428746f08f7e9)
+        ;
+
+        
+    
+    
+            marker_787dbd32eca70d8aae14cd6ee1e2c15d.bindTooltip(
+                `<div>
+                     <b>Pharmacie de l'église</b> : Toujours de bon conseil
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_787dbd32eca70d8aae14cd6ee1e2c15d.setIcon(icon_03bf082c4d79fd79f0cafeae77bd7a86);
+            
+    
+            var marker_ca23e07b7fe3a7868f34e1b1eace21d0 = L.marker(
+                [44.8308, -0.6035],
+                {
+}
+            ).addTo(map_9778219afcc9b64c22eec7a742994661);
+        
+    
+            var icon_089e640419811b4838a4ee407cc219f5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_68065f209bd02e73ced628a26a4195dd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_aa56aa6625d60f8c9a5219767717dd31 = $(`<div id="html_aa56aa6625d60f8c9a5219767717dd31" style="width: 100.0%; height: 100.0%;"><div style='min-width: 150px; font-family: sans-serif;'><b>Fleuriste Saint-Augustin</b><br>Avenue d'Arès<br><i>Fleuriste</i></div></div>`)[0];
+                popup_68065f209bd02e73ced628a26a4195dd.setContent(html_aa56aa6625d60f8c9a5219767717dd31);
+            
+        
+
+        marker_ca23e07b7fe3a7868f34e1b1eace21d0.bindPopup(popup_68065f209bd02e73ced628a26a4195dd)
+        ;
+
+        
+    
+    
+            marker_ca23e07b7fe3a7868f34e1b1eace21d0.bindTooltip(
+                `<div>
+                     <b>Fleuriste Saint-Augustin</b> : Dites-le avec des fleurs
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ca23e07b7fe3a7868f34e1b1eace21d0.setIcon(icon_089e640419811b4838a4ee407cc219f5);
+            
+    
+            var marker_9ee58817ef803602021b47e54924e0c5 = L.marker(
+                [44.8315, -0.605],
+                {
+}
+            ).addTo(map_9778219afcc9b64c22eec7a742994661);
+        
+    
+            var icon_3929f4e7ef7d638d73300a6033578c0a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_76c9b1144598c0999cb4335f8ea083c6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4ca554e1c84766373b2a27d9dab4c6e9 = $(`<div id="html_4ca554e1c84766373b2a27d9dab4c6e9" style="width: 100.0%; height: 100.0%;"><div style='min-width: 150px; font-family: sans-serif;'><b>Opticien Saint-Aug</b><br>Avenue d'Arès<br><i>Opticien</i></div></div>`)[0];
+                popup_76c9b1144598c0999cb4335f8ea083c6.setContent(html_4ca554e1c84766373b2a27d9dab4c6e9);
+            
+        
+
+        marker_9ee58817ef803602021b47e54924e0c5.bindPopup(popup_76c9b1144598c0999cb4335f8ea083c6)
+        ;
+
+        
+    
+    
+            marker_9ee58817ef803602021b47e54924e0c5.bindTooltip(
+                `<div>
+                     <b>Opticien Saint-Aug</b> : Pour mieux voir la carte !
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9ee58817ef803602021b47e54924e0c5.setIcon(icon_3929f4e7ef7d638d73300a6033578c0a);
+            
+    
+            var marker_58b14d866cc16337cdcc29255ee69ce1 = L.marker(
+                [44.8285, -0.5985],
+                {
+}
+            ).addTo(map_9778219afcc9b64c22eec7a742994661);
+        
+    
+            var icon_6bfa8e51e84b1693eb7a533e7383883f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ff122813defe1c6bc2b324a918b5131e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_72ed8310ea4b1fa94ee2f10fd95aaf18 = $(`<div id="html_72ed8310ea4b1fa94ee2f10fd95aaf18" style="width: 100.0%; height: 100.0%;"><div style='min-width: 150px; font-family: sans-serif;'><b>BNP Paribas</b><br>Barrière d'Ornano<br><i>Banque</i></div></div>`)[0];
+                popup_ff122813defe1c6bc2b324a918b5131e.setContent(html_72ed8310ea4b1fa94ee2f10fd95aaf18);
+            
+        
+
+        marker_58b14d866cc16337cdcc29255ee69ce1.bindPopup(popup_ff122813defe1c6bc2b324a918b5131e)
+        ;
+
+        
+    
+    
+            marker_58b14d866cc16337cdcc29255ee69ce1.bindTooltip(
+                `<div>
+                     <b>BNP Paribas</b> : La banque du coin
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_58b14d866cc16337cdcc29255ee69ce1.setIcon(icon_6bfa8e51e84b1693eb7a533e7383883f);
+            
+    
+            var marker_5f99b4aeb3988bad30157538ba33e573 = L.marker(
+                [44.8214, -0.5925],
+                {
+}
+            ).addTo(map_9778219afcc9b64c22eec7a742994661);
+        
+    
+            var icon_bd3c6fa9e338d06c3b4b06643462873a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1ff4910c48ddc74b974fce7adbaee7e5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ff033f90ff9e6de862b370bc0603871a = $(`<div id="html_ff033f90ff9e6de862b370bc0603871a" style="width: 100.0%; height: 100.0%;"><div style='min-width: 150px; font-family: sans-serif;'><b>Le Mustang</b><br>125 cours Maréchal Gallieni<br><i>Bar tabac</i></div></div>`)[0];
+                popup_1ff4910c48ddc74b974fce7adbaee7e5.setContent(html_ff033f90ff9e6de862b370bc0603871a);
+            
+        
+
+        marker_5f99b4aeb3988bad30157538ba33e573.bindPopup(popup_1ff4910c48ddc74b974fce7adbaee7e5)
+        ;
+
+        
+    
+    
+            marker_5f99b4aeb3988bad30157538ba33e573.bindTooltip(
+                `<div>
+                     <b>Le Mustang</b> : Les rendez-vous des jeunes
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5f99b4aeb3988bad30157538ba33e573.setIcon(icon_bd3c6fa9e338d06c3b4b06643462873a);
+            
+    
+            var marker_d6e0371ec271853594a83a2ade0a58ff = L.marker(
+                [44.8142, -0.5878],
+                {
+}
+            ).addTo(map_9778219afcc9b64c22eec7a742994661);
+        
+    
+            var icon_9a155684be8b6f3d2ce0d3274b360a0c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0e5a41b26639b86a5bb1b44fb8af268c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ff8f0dceba6720d91bf85e8a2d31a216 = $(`<div id="html_ff8f0dceba6720d91bf85e8a2d31a216" style="width: 100.0%; height: 100.0%;"><div style='min-width: 150px; font-family: sans-serif;'><b>Le Sawa mobile</b><br>230 cours Maréchal Gallieni<br><i>Réparation smartphone</i></div></div>`)[0];
+                popup_0e5a41b26639b86a5bb1b44fb8af268c.setContent(html_ff8f0dceba6720d91bf85e8a2d31a216);
+            
+        
+
+        marker_d6e0371ec271853594a83a2ade0a58ff.bindPopup(popup_0e5a41b26639b86a5bb1b44fb8af268c)
+        ;
+
+        
+    
+    
+            marker_d6e0371ec271853594a83a2ade0a58ff.bindTooltip(
+                `<div>
+                     <b>Le Sawa mobile</b> : Réparations soignées
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d6e0371ec271853594a83a2ade0a58ff.setIcon(icon_9a155684be8b6f3d2ce0d3274b360a0c);
+            
+    
+            var marker_4d51ed86393255fe7a66c0c44cbcb07a = L.marker(
+                [44.8145, -0.588],
+                {
+}
+            ).addTo(map_9778219afcc9b64c22eec7a742994661);
+        
+    
+            var icon_3c95859ab2bcc9843c8041b457257ded = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2a85f8c47d18a8d6ad8febed0513c11c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2c927376e3596805ec4ce0aa320d2a8c = $(`<div id="html_2c927376e3596805ec4ce0aa320d2a8c" style="width: 100.0%; height: 100.0%;"><div style='min-width: 150px; font-family: sans-serif;'><b>Inter marché</b><br>225 cours Gallieni<br><i>Alimentation générale</i></div></div>`)[0];
+                popup_2a85f8c47d18a8d6ad8febed0513c11c.setContent(html_2c927376e3596805ec4ce0aa320d2a8c);
+            
+        
+
+        marker_4d51ed86393255fe7a66c0c44cbcb07a.bindPopup(popup_2a85f8c47d18a8d6ad8febed0513c11c)
+        ;
+
+        
+    
+    
+            marker_4d51ed86393255fe7a66c0c44cbcb07a.bindTooltip(
+                `<div>
+                     <b>Inter marché</b> : La grande surface qui sourit
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4d51ed86393255fe7a66c0c44cbcb07a.setIcon(icon_3c95859ab2bcc9843c8041b457257ded);
+            
+    
+            var marker_0eea13a63d8c5930eca56e5980243a13 = L.marker(
+                [44.814, -0.5875],
+                {
+}
+            ).addTo(map_9778219afcc9b64c22eec7a742994661);
+        
+    
+            var icon_5710f60a089112e58880b407f4ee0564 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d1e85490a4253d97d0134b239e9eb356 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a64d463317f50e0b30cfd7df4d49c15b = $(`<div id="html_a64d463317f50e0b30cfd7df4d49c15b" style="width: 100.0%; height: 100.0%;"><div style='min-width: 150px; font-family: sans-serif;'><b>Carrefour City</b><br>230 cours Gallieni<br><i>Alimentation générale</i></div></div>`)[0];
+                popup_d1e85490a4253d97d0134b239e9eb356.setContent(html_a64d463317f50e0b30cfd7df4d49c15b);
+            
+        
+
+        marker_0eea13a63d8c5930eca56e5980243a13.bindPopup(popup_d1e85490a4253d97d0134b239e9eb356)
+        ;
+
+        
+    
+    
+            marker_0eea13a63d8c5930eca56e5980243a13.bindTooltip(
+                `<div>
+                     <b>Carrefour City</b> : Magasin d’appoint pratique
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0eea13a63d8c5930eca56e5980243a13.setIcon(icon_5710f60a089112e58880b407f4ee0564);
+            
+    
+            var marker_e1c992a9158839d6abd0a79ffa712aba = L.marker(
+                [44.8143, -0.5876],
+                {
+}
+            ).addTo(map_9778219afcc9b64c22eec7a742994661);
+        
+    
+            var icon_f43473903223fd1fb95f87368659a678 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ccdd99bf0a0a022f46bfce82a84ba263 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_83e372e93bf59d67a038a77913140984 = $(`<div id="html_83e372e93bf59d67a038a77913140984" style="width: 100.0%; height: 100.0%;"><div style='min-width: 150px; font-family: sans-serif;'><b>Boulangerie Médoquine</b><br>228 cours Gallieni<br><i>Artisan boulanger</i></div></div>`)[0];
+                popup_ccdd99bf0a0a022f46bfce82a84ba263.setContent(html_83e372e93bf59d67a038a77913140984);
+            
+        
+
+        marker_e1c992a9158839d6abd0a79ffa712aba.bindPopup(popup_ccdd99bf0a0a022f46bfce82a84ba263)
+        ;
+
+        
+    
+    
+            marker_e1c992a9158839d6abd0a79ffa712aba.bindTooltip(
+                `<div>
+                     <b>Boulangerie Médoquine</b> : Sourire et gentillesse
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e1c992a9158839d6abd0a79ffa712aba.setIcon(icon_f43473903223fd1fb95f87368659a678);
+            
+    
+            var marker_1914265d7c37f36dcdfc0a34104599c1 = L.marker(
+                [44.8148, -0.5882],
+                {
+}
+            ).addTo(map_9778219afcc9b64c22eec7a742994661);
+        
+    
+            var icon_dcd4fe8b6b9f999c2ff7c88841eb9fce = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9a88c3485dc9595e266aea49b371db71 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_de7315f3f43b375095afb8b76efe6a42 = $(`<div id="html_de7315f3f43b375095afb8b76efe6a42" style="width: 100.0%; height: 100.0%;"><div style='min-width: 150px; font-family: sans-serif;'><b>Dice and Drink</b><br>220 cours Gallieni<br><i>Bar à ambiance</i></div></div>`)[0];
+                popup_9a88c3485dc9595e266aea49b371db71.setContent(html_de7315f3f43b375095afb8b76efe6a42);
+            
+        
+
+        marker_1914265d7c37f36dcdfc0a34104599c1.bindPopup(popup_9a88c3485dc9595e266aea49b371db71)
+        ;
+
+        
+    
+    
+            marker_1914265d7c37f36dcdfc0a34104599c1.bindTooltip(
+                `<div>
+                     <b>Dice and Drink</b> : Des boissons et des jeux
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1914265d7c37f36dcdfc0a34104599c1.setIcon(icon_dcd4fe8b6b9f999c2ff7c88841eb9fce);
+            
+    
+            var marker_26b8daeb7c18e11c961b4a894657cb6b = L.marker(
+                [44.8152, -0.5885],
+                {
+}
+            ).addTo(map_9778219afcc9b64c22eec7a742994661);
+        
+    
+            var icon_2c616d8bdb73b450b92ca0af38915020 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1c550b42e40eedfabee7f8dfdca701a9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dde95cc4f301f16bbe90b00934e45375 = $(`<div id="html_dde95cc4f301f16bbe90b00934e45375" style="width: 100.0%; height: 100.0%;"><div style='min-width: 150px; font-family: sans-serif;'><b>So beautiful hair</b><br>208 cours Gallieni<br><i>Coiffeur</i></div></div>`)[0];
+                popup_1c550b42e40eedfabee7f8dfdca701a9.setContent(html_dde95cc4f301f16bbe90b00934e45375);
+            
+        
+
+        marker_26b8daeb7c18e11c961b4a894657cb6b.bindPopup(popup_1c550b42e40eedfabee7f8dfdca701a9)
+        ;
+
+        
+    
+    
+            marker_26b8daeb7c18e11c961b4a894657cb6b.bindTooltip(
+                `<div>
+                     <b>So beautiful hair</b> : Le spécialiste des boucles
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_26b8daeb7c18e11c961b4a894657cb6b.setIcon(icon_2c616d8bdb73b450b92ca0af38915020);
+            
+    
+            var marker_8112eceabea8eeb5e11f978f16881d9c = L.marker(
+                [44.8155, -0.5888],
+                {
+}
+            ).addTo(map_9778219afcc9b64c22eec7a742994661);
+        
+    
+            var icon_5b3e3d85b238c720bacaa74c4c28ea62 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f34a664a793eec90563d16d6701be78a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7aef25386a754723161d156295d83532 = $(`<div id="html_7aef25386a754723161d156295d83532" style="width: 100.0%; height: 100.0%;"><div style='min-width: 150px; font-family: sans-serif;'><b>Poissonnerie des Girondins</b><br>198 cours Gallieni<br><i>Poissonnerie</i></div></div>`)[0];
+                popup_f34a664a793eec90563d16d6701be78a.setContent(html_7aef25386a754723161d156295d83532);
+            
+        
+
+        marker_8112eceabea8eeb5e11f978f16881d9c.bindPopup(popup_f34a664a793eec90563d16d6701be78a)
+        ;
+
+        
+    
+    
+            marker_8112eceabea8eeb5e11f978f16881d9c.bindTooltip(
+                `<div>
+                     <b>Poissonnerie des Girondins</b> : Le frais et la qualité
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8112eceabea8eeb5e11f978f16881d9c.setIcon(icon_5b3e3d85b238c720bacaa74c4c28ea62);
+            
+    
+            var marker_0e520bc4ff8de1c411ca04f1849515c9 = L.marker(
+                [44.8158, -0.589],
+                {
+}
+            ).addTo(map_9778219afcc9b64c22eec7a742994661);
+        
+    
+            var icon_4b9569cc3ae98e34ce8925542717489c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bf7efc7c9a1769a8726892106c09622f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7df83e1e543089d0d052d56887249852 = $(`<div id="html_7df83e1e543089d0d052d56887249852" style="width: 100.0%; height: 100.0%;"><div style='min-width: 150px; font-family: sans-serif;'><b>La clémentine Surfeuse</b><br>196 cours Gallieni<br><i>Fruits et légumes</i></div></div>`)[0];
+                popup_bf7efc7c9a1769a8726892106c09622f.setContent(html_7df83e1e543089d0d052d56887249852);
+            
+        
+
+        marker_0e520bc4ff8de1c411ca04f1849515c9.bindPopup(popup_bf7efc7c9a1769a8726892106c09622f)
+        ;
+
+        
+    
+    
+            marker_0e520bc4ff8de1c411ca04f1849515c9.bindTooltip(
+                `<div>
+                     <b>La clémentine Surfeuse</b> : Le choix et la qualité
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0e520bc4ff8de1c411ca04f1849515c9.setIcon(icon_4b9569cc3ae98e34ce8925542717489c);
+            
+    
+            var marker_cd9b2eb71ca4a2a85f85afe20d2f5df5 = L.marker(
+                [44.8162, -0.5895],
+                {
+}
+            ).addTo(map_9778219afcc9b64c22eec7a742994661);
+        
+    
+            var icon_a57fd4debbc4845a9cce992d22ec3316 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_14ef5fc64eed80fa5ea486dbc0b25182 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_190ec8a9d220f39fc4d00b37ea69a7c5 = $(`<div id="html_190ec8a9d220f39fc4d00b37ea69a7c5" style="width: 100.0%; height: 100.0%;"><div style='min-width: 150px; font-family: sans-serif;'><b>Fromages de Manon</b><br>184 cours Gallieni<br><i>Fromagerie</i></div></div>`)[0];
+                popup_14ef5fc64eed80fa5ea486dbc0b25182.setContent(html_190ec8a9d220f39fc4d00b37ea69a7c5);
+            
+        
+
+        marker_cd9b2eb71ca4a2a85f85afe20d2f5df5.bindPopup(popup_14ef5fc64eed80fa5ea486dbc0b25182)
+        ;
+
+        
+    
+    
+            marker_cd9b2eb71ca4a2a85f85afe20d2f5df5.bindTooltip(
+                `<div>
+                     <b>Fromages de Manon</b> : Le bonheur en fromage
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cd9b2eb71ca4a2a85f85afe20d2f5df5.setIcon(icon_a57fd4debbc4845a9cce992d22ec3316);
+            
+    
+            var marker_e5ad866588ced5b8188fe8f83acf3f61 = L.marker(
+                [44.8195, -0.585],
+                {
+}
+            ).addTo(map_9778219afcc9b64c22eec7a742994661);
+        
+    
+            var icon_0ec40e50b92d9e6be376497e4b495f4b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3e0ad6932a1774e0f0703c7db1e80c5d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d909301d64f21e6783a9597529fa98a7 = $(`<div id="html_d909301d64f21e6783a9597529fa98a7" style="width: 100.0%; height: 100.0%;"><div style='min-width: 150px; font-family: sans-serif;'><b>Saumons Fumés</b><br>Boulevard Georges V<br><i>Poissonnerie</i></div></div>`)[0];
+                popup_3e0ad6932a1774e0f0703c7db1e80c5d.setContent(html_d909301d64f21e6783a9597529fa98a7);
+            
+        
+
+        marker_e5ad866588ced5b8188fe8f83acf3f61.bindPopup(popup_3e0ad6932a1774e0f0703c7db1e80c5d)
+        ;
+
+        
+    
+    
+            marker_e5ad866588ced5b8188fe8f83acf3f61.bindTooltip(
+                `<div>
+                     <b>Saumons Fumés</b> : Le luxe du fumé
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e5ad866588ced5b8188fe8f83acf3f61.setIcon(icon_0ec40e50b92d9e6be376497e4b495f4b);
+            
+    
+            var marker_ebfd0e4860998fc16904dd107edf3076 = L.marker(
+                [44.8085, -0.572],
+                {
+}
+            ).addTo(map_9778219afcc9b64c22eec7a742994661);
+        
+    
+            var icon_94d4cca9f2ead42631608f866c319d46 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3205e263e54d52dbdfc0e73f148e2926 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_31262aeb7966a9507ed509083c9aec84 = $(`<div id="html_31262aeb7966a9507ed509083c9aec84" style="width: 100.0%; height: 100.0%;"><div style='min-width: 150px; font-family: sans-serif;'><b>Le Familial</b><br>Route de Toulouse<br><i>Bar tabac</i></div></div>`)[0];
+                popup_3205e263e54d52dbdfc0e73f148e2926.setContent(html_31262aeb7966a9507ed509083c9aec84);
+            
+        
+
+        marker_ebfd0e4860998fc16904dd107edf3076.bindPopup(popup_3205e263e54d52dbdfc0e73f148e2926)
+        ;
+
+        
+    
+    
+            marker_ebfd0e4860998fc16904dd107edf3076.bindTooltip(
+                `<div>
+                     <b>Le Familial</b> : Ambiance de quartier
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ebfd0e4860998fc16904dd107edf3076.setIcon(icon_94d4cca9f2ead42631608f866c319d46);
+            
+    
+            var marker_3d2750107cc628472d7074dd2c874a91 = L.marker(
+                [44.809, -0.5725],
+                {
+}
+            ).addTo(map_9778219afcc9b64c22eec7a742994661);
+        
+    
+            var icon_88c0f5775931a533e0c390c660356ea2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_64e7074fdc23523188d2aa96ac2e071d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_27232f731adbdfdf6e5eb4891be81fbe = $(`<div id="html_27232f731adbdfdf6e5eb4891be81fbe" style="width: 100.0%; height: 100.0%;"><div style='min-width: 150px; font-family: sans-serif;'><b>Boulangerie du Sud</b><br>Route de Toulouse<br><i>Artisan boulanger</i></div></div>`)[0];
+                popup_64e7074fdc23523188d2aa96ac2e071d.setContent(html_27232f731adbdfdf6e5eb4891be81fbe);
+            
+        
+
+        marker_3d2750107cc628472d7074dd2c874a91.bindPopup(popup_64e7074fdc23523188d2aa96ac2e071d)
+        ;
+
+        
+    
+    
+            marker_3d2750107cc628472d7074dd2c874a91.bindTooltip(
+                `<div>
+                     <b>Boulangerie du Sud</b> : Le goût du vrai
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3d2750107cc628472d7074dd2c874a91.setIcon(icon_88c0f5775931a533e0c390c660356ea2);
+            
+    
+            var marker_2c157e0aa0d1443a94b49319f9f252c6 = L.marker(
+                [44.808, -0.5715],
+                {
+}
+            ).addTo(map_9778219afcc9b64c22eec7a742994661);
+        
+    
+            var icon_bd4979a21f9830927ab463d9b1f34a2c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9be9f2d811684bf7d70efed1dab89680 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2aff4fe3b495523d98e2888d439c78ab = $(`<div id="html_2aff4fe3b495523d98e2888d439c78ab" style="width: 100.0%; height: 100.0%;"><div style='min-width: 150px; font-family: sans-serif;'><b>Pharmacie Sud</b><br>Route de Toulouse<br><i>Santé</i></div></div>`)[0];
+                popup_9be9f2d811684bf7d70efed1dab89680.setContent(html_2aff4fe3b495523d98e2888d439c78ab);
+            
+        
+
+        marker_2c157e0aa0d1443a94b49319f9f252c6.bindPopup(popup_9be9f2d811684bf7d70efed1dab89680)
+        ;
+
+        
+    
+    
+            marker_2c157e0aa0d1443a94b49319f9f252c6.bindTooltip(
+                `<div>
+                     <b>Pharmacie Sud</b> : Service rapide
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2c157e0aa0d1443a94b49319f9f252c6.setIcon(icon_bd4979a21f9830927ab463d9b1f34a2c);
+            
+    
+            var marker_12e287ada91938d7f9874eb1e0f9ab8a = L.marker(
+                [44.8075, -0.571],
+                {
+}
+            ).addTo(map_9778219afcc9b64c22eec7a742994661);
+        
+    
+            var icon_2c71118eac07d83aa41cbaa6d83cb99b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fda61f46ddc484acb2b5a9ca74927c1b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_64ad7f04d9afc11d4019aea982425fe5 = $(`<div id="html_64ad7f04d9afc11d4019aea982425fe5" style="width: 100.0%; height: 100.0%;"><div style='min-width: 150px; font-family: sans-serif;'><b>Vétérinaire Bègles</b><br>Route de Toulouse<br><i>Vétérinaire</i></div></div>`)[0];
+                popup_fda61f46ddc484acb2b5a9ca74927c1b.setContent(html_64ad7f04d9afc11d4019aea982425fe5);
+            
+        
+
+        marker_12e287ada91938d7f9874eb1e0f9ab8a.bindPopup(popup_fda61f46ddc484acb2b5a9ca74927c1b)
+        ;
+
+        
+    
+    
+            marker_12e287ada91938d7f9874eb1e0f9ab8a.bindTooltip(
+                `<div>
+                     <b>Vétérinaire Bègles</b> : Pour nos amis les bêtes
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_12e287ada91938d7f9874eb1e0f9ab8a.setIcon(icon_2c71118eac07d83aa41cbaa6d83cb99b);
+            
+    
+            var marker_ef62896a171cca411c09fc2ec77f3b67 = L.marker(
+                [44.8065, -0.5705],
+                {
+}
+            ).addTo(map_9778219afcc9b64c22eec7a742994661);
+        
+    
+            var icon_30f0d4537bbf3b4c7822ebbf58a53295 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f9e4ff77df1d008a8b2a3f3fd21634f7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_90e73076a846ee23383d7ab3e45951ca = $(`<div id="html_90e73076a846ee23383d7ab3e45951ca" style="width: 100.0%; height: 100.0%;"><div style='min-width: 150px; font-family: sans-serif;'><b>L'Inédit</b><br>Route de Toulouse<br><i>Restaurant</i></div></div>`)[0];
+                popup_f9e4ff77df1d008a8b2a3f3fd21634f7.setContent(html_90e73076a846ee23383d7ab3e45951ca);
+            
+        
+
+        marker_ef62896a171cca411c09fc2ec77f3b67.bindPopup(popup_f9e4ff77df1d008a8b2a3f3fd21634f7)
+        ;
+
+        
+    
+    
+            marker_ef62896a171cca411c09fc2ec77f3b67.bindTooltip(
+                `<div>
+                     <b>L'Inédit</b> : Une table à découvrir
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ef62896a171cca411c09fc2ec77f3b67.setIcon(icon_30f0d4537bbf3b4c7822ebbf58a53295);
+            
+    
+            var marker_bc398ec53547d083e5664e11c83c6cbc = L.marker(
+                [44.8115, -0.585],
+                {
+}
+            ).addTo(map_9778219afcc9b64c22eec7a742994661);
+        
+    
+            var icon_69c330cb43acebd4d8f40378537b8f32 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2ab5186641695cda9da8002128dd0d66 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_03e88390ff6b96088b37c0d49273bd18 = $(`<div id="html_03e88390ff6b96088b37c0d49273bd18" style="width: 100.0%; height: 100.0%;"><div style='min-width: 150px; font-family: sans-serif;'><b>Tennis club</b><br>Talence<br><i>Centre sportif</i></div></div>`)[0];
+                popup_2ab5186641695cda9da8002128dd0d66.setContent(html_03e88390ff6b96088b37c0d49273bd18);
+            
+        
+
+        marker_bc398ec53547d083e5664e11c83c6cbc.bindPopup(popup_2ab5186641695cda9da8002128dd0d66)
+        ;
+
+        
+    
+    
+            marker_bc398ec53547d083e5664e11c83c6cbc.bindTooltip(
+                `<div>
+                     <b>Tennis club</b> : Le sport en plein air
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bc398ec53547d083e5664e11c83c6cbc.setIcon(icon_69c330cb43acebd4d8f40378537b8f32);
+            
+    
+            var marker_625e7e48ffbdb0766743b8f6a470b3f1 = L.marker(
+                [44.8052, -0.5895],
+                {
+}
+            ).addTo(map_9778219afcc9b64c22eec7a742994661);
+        
+    
+            var icon_336d75945c02184bb996e664aa8a376a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cceec21bb83dd62843b12899eeb13766 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_79738138c983fda75e0b88654bf66862 = $(`<div id="html_79738138c983fda75e0b88654bf66862" style="width: 100.0%; height: 100.0%;"><div style='min-width: 150px; font-family: sans-serif;'><b>Street phone</b><br>343 cours de la libération<br><i>Réparation smartphone</i></div></div>`)[0];
+                popup_cceec21bb83dd62843b12899eeb13766.setContent(html_79738138c983fda75e0b88654bf66862);
+            
+        
+
+        marker_625e7e48ffbdb0766743b8f6a470b3f1.bindPopup(popup_cceec21bb83dd62843b12899eeb13766)
+        ;
+
+        
+    
+    
+            marker_625e7e48ffbdb0766743b8f6a470b3f1.bindTooltip(
+                `<div>
+                     <b>Street phone</b> : Efficacité et Sourire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_625e7e48ffbdb0766743b8f6a470b3f1.setIcon(icon_336d75945c02184bb996e664aa8a376a);
+            
+    
+            var marker_d01de79ed59698826785ed3b804c7feb = L.marker(
+                [44.8048, -0.589],
+                {
+}
+            ).addTo(map_9778219afcc9b64c22eec7a742994661);
+        
+    
+            var icon_bae5db71f2a0b7324219c0ea5ad2480b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_249b1342a8589a35c0f7e31f5432b617 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_aeff826ca3cb773426fd73ec426930a9 = $(`<div id="html_aeff826ca3cb773426fd73ec426930a9" style="width: 100.0%; height: 100.0%;"><div style='min-width: 150px; font-family: sans-serif;'><b>Forum Food</b><br>331 cours de la libération<br><i>Restauration</i></div></div>`)[0];
+                popup_249b1342a8589a35c0f7e31f5432b617.setContent(html_aeff826ca3cb773426fd73ec426930a9);
+            
+        
+
+        marker_d01de79ed59698826785ed3b804c7feb.bindPopup(popup_249b1342a8589a35c0f7e31f5432b617)
+        ;
+
+        
+    
+    
+            marker_d01de79ed59698826785ed3b804c7feb.bindTooltip(
+                `<div>
+                     <b>Forum Food</b> : Venez pour goûter !
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d01de79ed59698826785ed3b804c7feb.setIcon(icon_bae5db71f2a0b7324219c0ea5ad2480b);
+            
+    
+            var marker_8654902a01516f1cb457a9eea21af19b = L.marker(
+                [44.806, -0.588],
+                {
+}
+            ).addTo(map_9778219afcc9b64c22eec7a742994661);
+        
+    
+            var icon_bbbb60b1a2414ae3f26fa2aec68b3555 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4b377730b85f9f461e1f8ca191a37801 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8bdd8fd3ad79c2933b9e2f7ad8c7f7a9 = $(`<div id="html_8bdd8fd3ad79c2933b9e2f7ad8c7f7a9" style="width: 100.0%; height: 100.0%;"><div style='min-width: 150px; font-family: sans-serif;'><b>Maison des jeunes</b><br>Talence<br><i>Lieu pour jeunes</i></div></div>`)[0];
+                popup_4b377730b85f9f461e1f8ca191a37801.setContent(html_8bdd8fd3ad79c2933b9e2f7ad8c7f7a9);
+            
+        
+
+        marker_8654902a01516f1cb457a9eea21af19b.bindPopup(popup_4b377730b85f9f461e1f8ca191a37801)
+        ;
+
+        
+    
+    
+            marker_8654902a01516f1cb457a9eea21af19b.bindTooltip(
+                `<div>
+                     <b>Maison des jeunes</b> : L'avenir est ici
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8654902a01516f1cb457a9eea21af19b.setIcon(icon_bbbb60b1a2414ae3f26fa2aec68b3555);
+            
+    
+            var marker_e23b8f7a96e0f111343df87c63dfc555 = L.marker(
+                [44.807, -0.587],
+                {
+}
+            ).addTo(map_9778219afcc9b64c22eec7a742994661);
+        
+    
+            var icon_48dcc0499bb086323e0d2c6d67513070 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f1b2516ee3ed05d5b9a771ea806b1ba8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bdd42c1e2b3f13c2ea62ac43250170b4 = $(`<div id="html_bdd42c1e2b3f13c2ea62ac43250170b4" style="width: 100.0%; height: 100.0%;"><div style='min-width: 150px; font-family: sans-serif;'><b>Massage détente</b><br>Talence<br><i>Salon bien-être</i></div></div>`)[0];
+                popup_f1b2516ee3ed05d5b9a771ea806b1ba8.setContent(html_bdd42c1e2b3f13c2ea62ac43250170b4);
+            
+        
+
+        marker_e23b8f7a96e0f111343df87c63dfc555.bindPopup(popup_f1b2516ee3ed05d5b9a771ea806b1ba8)
+        ;
+
+        
+    
+    
+            marker_e23b8f7a96e0f111343df87c63dfc555.bindTooltip(
+                `<div>
+                     <b>Massage détente</b> : Un moment pour soi
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e23b8f7a96e0f111343df87c63dfc555.setIcon(icon_48dcc0499bb086323e0d2c6d67513070);
+            
+    
+            var marker_6cb3081c3a2401694fb7ac0b011c33d1 = L.marker(
+                [44.808, -0.586],
+                {
+}
+            ).addTo(map_9778219afcc9b64c22eec7a742994661);
+        
+    
+            var icon_512df4a5fda9ae765e77a404d7c4047e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5fd5984c22d694c15691dd92335150a4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d293ad4ec0134247b15dd7d916bbe8c1 = $(`<div id="html_d293ad4ec0134247b15dd7d916bbe8c1" style="width: 100.0%; height: 100.0%;"><div style='min-width: 150px; font-family: sans-serif;'><b>Vélo Passion</b><br>Talence<br><i>Garage à vélo</i></div></div>`)[0];
+                popup_5fd5984c22d694c15691dd92335150a4.setContent(html_d293ad4ec0134247b15dd7d916bbe8c1);
+            
+        
+
+        marker_6cb3081c3a2401694fb7ac0b011c33d1.bindPopup(popup_5fd5984c22d694c15691dd92335150a4)
+        ;
+
+        
+    
+    
+            marker_6cb3081c3a2401694fb7ac0b011c33d1.bindTooltip(
+                `<div>
+                     <b>Vélo Passion</b> : On bichonne votre monture
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6cb3081c3a2401694fb7ac0b011c33d1.setIcon(icon_512df4a5fda9ae765e77a404d7c4047e);
+            
+    
+            var marker_d2612b4e1fd9a7324ae3bbe52c2002bf = L.marker(
+                [44.809, -0.585],
+                {
+}
+            ).addTo(map_9778219afcc9b64c22eec7a742994661);
+        
+    
+            var icon_2bd03d762bbfac403582360f5823cf17 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_86941ceb6c8bbd82194a69ec7a8f4611 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4296d4e012f1ae6385f5eb41338cb166 = $(`<div id="html_4296d4e012f1ae6385f5eb41338cb166" style="width: 100.0%; height: 100.0%;"><div style='min-width: 150px; font-family: sans-serif;'><b>Relais Pick up</b><br>Talence<br><i>Relais colis</i></div></div>`)[0];
+                popup_86941ceb6c8bbd82194a69ec7a8f4611.setContent(html_4296d4e012f1ae6385f5eb41338cb166);
+            
+        
+
+        marker_d2612b4e1fd9a7324ae3bbe52c2002bf.bindPopup(popup_86941ceb6c8bbd82194a69ec7a8f4611)
+        ;
+
+        
+    
+    
+            marker_d2612b4e1fd9a7324ae3bbe52c2002bf.bindTooltip(
+                `<div>
+                     <b>Relais Pick up</b> : Vos colis en sécurité
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d2612b4e1fd9a7324ae3bbe52c2002bf.setIcon(icon_2bd03d762bbfac403582360f5823cf17);
+            
+    
+            var marker_3d78d92caed1f1aba4d8c63ac7991fb8 = L.marker(
+                [44.81, -0.584],
+                {
+}
+            ).addTo(map_9778219afcc9b64c22eec7a742994661);
+        
+    
+            var icon_ffa9a52f0e8d169d03373010746bf4e2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_26c6c1852b4b2811fdb302661b44172f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1d40403e3c1e70e91e1f08340a5b4960 = $(`<div id="html_1d40403e3c1e70e91e1f08340a5b4960" style="width: 100.0%; height: 100.0%;"><div style='min-width: 150px; font-family: sans-serif;'><b>Micro Brasserie</b><br>Talence<br><i>Bar</i></div></div>`)[0];
+                popup_26c6c1852b4b2811fdb302661b44172f.setContent(html_1d40403e3c1e70e91e1f08340a5b4960);
+            
+        
+
+        marker_3d78d92caed1f1aba4d8c63ac7991fb8.bindPopup(popup_26c6c1852b4b2811fdb302661b44172f)
+        ;
+
+        
+    
+    
+            marker_3d78d92caed1f1aba4d8c63ac7991fb8.bindTooltip(
+                `<div>
+                     <b>Micro Brasserie</b> : La bière du coin
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3d78d92caed1f1aba4d8c63ac7991fb8.setIcon(icon_ffa9a52f0e8d169d03373010746bf4e2);
+            
+    
+            var marker_132666577899d0a7138426fde2909c27 = L.marker(
+                [44.811, -0.583],
+                {
+}
+            ).addTo(map_9778219afcc9b64c22eec7a742994661);
+        
+    
+            var icon_e168fbd367ddf39318585cee9b256ec2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2745fbda7234611d75fa3895504eb37f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_50c7739d30db31c4cea6dfa69ca517d4 = $(`<div id="html_50c7739d30db31c4cea6dfa69ca517d4" style="width: 100.0%; height: 100.0%;"><div style='min-width: 150px; font-family: sans-serif;'><b>Vétérinaire Talence</b><br>Talence<br><i>Vétérinaire</i></div></div>`)[0];
+                popup_2745fbda7234611d75fa3895504eb37f.setContent(html_50c7739d30db31c4cea6dfa69ca517d4);
+            
+        
+
+        marker_132666577899d0a7138426fde2909c27.bindPopup(popup_2745fbda7234611d75fa3895504eb37f)
+        ;
+
+        
+    
+    
+            marker_132666577899d0a7138426fde2909c27.bindTooltip(
+                `<div>
+                     <b>Vétérinaire Talence</b> : Soins experts
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_132666577899d0a7138426fde2909c27.setIcon(icon_e168fbd367ddf39318585cee9b256ec2);
+            
+    
+            var marker_093aa9a832ea211ffa652fb788886f1c = L.marker(
+                [44.812, -0.582],
+                {
+}
+            ).addTo(map_9778219afcc9b64c22eec7a742994661);
+        
+    
+            var icon_57c429c76ed1163ff7ebf219d372de3f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_878e7a1e96275bd179f3b9311c00f34b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_89b393cb1eb9e1bfd2e3fa1d1833c1a6 = $(`<div id="html_89b393cb1eb9e1bfd2e3fa1d1833c1a6" style="width: 100.0%; height: 100.0%;"><div style='min-width: 150px; font-family: sans-serif;'><b>Épicerie fine</b><br>Talence<br><i>Épicerie</i></div></div>`)[0];
+                popup_878e7a1e96275bd179f3b9311c00f34b.setContent(html_89b393cb1eb9e1bfd2e3fa1d1833c1a6);
+            
+        
+
+        marker_093aa9a832ea211ffa652fb788886f1c.bindPopup(popup_878e7a1e96275bd179f3b9311c00f34b)
+        ;
+
+        
+    
+    
+            marker_093aa9a832ea211ffa652fb788886f1c.bindTooltip(
+                `<div>
+                     <b>Épicerie fine</b> : Produits d'exception
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_093aa9a832ea211ffa652fb788886f1c.setIcon(icon_57c429c76ed1163ff7ebf219d372de3f);
+            
+    
+            var marker_960d738567d4fa20734c3abac2eac5aa = L.marker(
+                [44.813, -0.581],
+                {
+}
+            ).addTo(map_9778219afcc9b64c22eec7a742994661);
+        
+    
+            var icon_d723dc08cf4d2f2bb623692b7af246e2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e8479ae725858de4850f13ea6d66c1aa = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_126ec3f1221108c771b95d71881dfc7c = $(`<div id="html_126ec3f1221108c771b95d71881dfc7c" style="width: 100.0%; height: 100.0%;"><div style='min-width: 150px; font-family: sans-serif;'><b>Pâtisserie Suzon</b><br>Talence<br><i>Pâtissier</i></div></div>`)[0];
+                popup_e8479ae725858de4850f13ea6d66c1aa.setContent(html_126ec3f1221108c771b95d71881dfc7c);
+            
+        
+
+        marker_960d738567d4fa20734c3abac2eac5aa.bindPopup(popup_e8479ae725858de4850f13ea6d66c1aa)
+        ;
+
+        
+    
+    
+            marker_960d738567d4fa20734c3abac2eac5aa.bindTooltip(
+                `<div>
+                     <b>Pâtisserie Suzon</b> : La douceur sucrée
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_960d738567d4fa20734c3abac2eac5aa.setIcon(icon_d723dc08cf4d2f2bb623692b7af246e2);
+            
+    
+            var marker_6b57b01ae45e021b49ff730cb0fb4dcb = L.marker(
+                [44.814, -0.58],
+                {
+}
+            ).addTo(map_9778219afcc9b64c22eec7a742994661);
+        
+    
+            var icon_dd03460db86dcdb7bcd892159ca3bc45 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1cbe9a4d5d01b08f9797c383d663a67a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_db13f5ccbccf6b46ee08ae0f6b7568e4 = $(`<div id="html_db13f5ccbccf6b46ee08ae0f6b7568e4" style="width: 100.0%; height: 100.0%;"><div style='min-width: 150px; font-family: sans-serif;'><b>Boulangerie Suzon</b><br>Talence<br><i>Artisan boulanger</i></div></div>`)[0];
+                popup_1cbe9a4d5d01b08f9797c383d663a67a.setContent(html_db13f5ccbccf6b46ee08ae0f6b7568e4);
+            
+        
+
+        marker_6b57b01ae45e021b49ff730cb0fb4dcb.bindPopup(popup_1cbe9a4d5d01b08f9797c383d663a67a)
+        ;
+
+        
+    
+    
+            marker_6b57b01ae45e021b49ff730cb0fb4dcb.bindTooltip(
+                `<div>
+                     <b>Boulangerie Suzon</b> : Croustillant à souhait
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6b57b01ae45e021b49ff730cb0fb4dcb.setIcon(icon_dd03460db86dcdb7bcd892159ca3bc45);
+            
+    
+            var marker_3842639e7b895dee30ec3939daed152c = L.marker(
+                [44.8365, -0.612],
+                {
+}
+            ).addTo(map_9778219afcc9b64c22eec7a742994661);
+        
+    
+            var icon_8f9bd2820e8f62207cbdf6ae4ea4402b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bf24e0e9c27780f70cb5d30e5a6eb05a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_356401b63c75004ca934439d9a01816e = $(`<div id="html_356401b63c75004ca934439d9a01816e" style="width: 100.0%; height: 100.0%;"><div style='min-width: 150px; font-family: sans-serif;'><b>Bistro Cauderan</b><br>Avenue d'Arès<br><i>Restaurant</i></div></div>`)[0];
+                popup_bf24e0e9c27780f70cb5d30e5a6eb05a.setContent(html_356401b63c75004ca934439d9a01816e);
+            
+        
+
+        marker_3842639e7b895dee30ec3939daed152c.bindPopup(popup_bf24e0e9c27780f70cb5d30e5a6eb05a)
+        ;
+
+        
+    
+    
+            marker_3842639e7b895dee30ec3939daed152c.bindTooltip(
+                `<div>
+                     <b>Bistro Cauderan</b> : La cuisine du marché
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3842639e7b895dee30ec3939daed152c.setIcon(icon_8f9bd2820e8f62207cbdf6ae4ea4402b);
+            
+    
+            var marker_908a1931e3a8df29bf078a8000c22e68 = L.marker(
+                [44.837, -0.613],
+                {
+}
+            ).addTo(map_9778219afcc9b64c22eec7a742994661);
+        
+    
+            var icon_9762d3c208865b5e0fa6e6fd169033f0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_011f6b660a7a47959d03c62e3cd228a6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_74c6ad021a90ad3bed63f34f44371703 = $(`<div id="html_74c6ad021a90ad3bed63f34f44371703" style="width: 100.0%; height: 100.0%;"><div style='min-width: 150px; font-family: sans-serif;'><b>Coiffeur Zine</b><br>Avenue d'Arès<br><i>Coiffeur</i></div></div>`)[0];
+                popup_011f6b660a7a47959d03c62e3cd228a6.setContent(html_74c6ad021a90ad3bed63f34f44371703);
+            
+        
+
+        marker_908a1931e3a8df29bf078a8000c22e68.bindPopup(popup_011f6b660a7a47959d03c62e3cd228a6)
+        ;
+
+        
+    
+    
+            marker_908a1931e3a8df29bf078a8000c22e68.bindTooltip(
+                `<div>
+                     <b>Coiffeur Zine</b> : Le style à l'état pur
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_908a1931e3a8df29bf078a8000c22e68.setIcon(icon_9762d3c208865b5e0fa6e6fd169033f0);
+            
+</script>
+</html>
